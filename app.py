@@ -214,4 +214,5 @@ def upload_image():
 if __name__ == '__main__':
     if not os.path.exists(api.config['UPLOAD_FOLDER']):
         os.makedirs(api.config['UPLOAD_FOLDER'])
-    api.run(debug=True)
+    # Render expects the app to run on port 10000
+    api.run(host='0.0.0.0', port=int(os.environ.get('PORT', 10000)), debug=False)
