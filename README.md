@@ -1,0 +1,1 @@
+pip install Flask Flask-JWT-Extended Flask-Bcrypt Flask-SQLAlchemy flask-cors ultralytics
