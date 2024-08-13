@@ -5,3 +5,4 @@ Flask-SQLAlchemy
 flask-cors
 ultralytics
 gunicorn
+flask_swagger_ui
